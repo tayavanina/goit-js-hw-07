@@ -54,7 +54,7 @@ const markup = images
   .map(
     image =>
       `<li class="list-item"> 
-  <img class = "image-item" src = ${image.url} alt = ${image.alt} /> 
+  <img class = "image-item" src = "${image.url}" alt = "${image.alt}" /> 
   </li>`
   )
   .join('');

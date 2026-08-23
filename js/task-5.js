@@ -16,7 +16,8 @@ const body = document.querySelector('body');
 const span = document.querySelector('.color');
 function handleClick(event) {
   event.preventDefault();
-  body.style.backgroundColor = getRandomHexColor();
+  const color = getRandomHexColor();
+  body.style.backgroundColor = color;
   // span.insertAdjacentHTML('beforeend', getRandomHexColor());
-  span.innerHTML = `${getRandomHexColor()}`;
+  span.innerHTML = `${color}`;
 }
